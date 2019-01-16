@@ -68,7 +68,7 @@ module.exports = {
           macacaEcosystem.en,
         ],
         sidebar: {
-          '/guide/': genSidebarConfig('Guide', 'Usage', 'Advanced'),
+          '/guide/': genSidebarConfig(['Guide', 'CI/CD', 'Community']),
         },
       },
       '/zh/': {
@@ -90,20 +90,32 @@ module.exports = {
           macacaEcosystem.zh,
         ],
         sidebar: {
-          '/zh/guide/': genSidebarConfig('指南'),
+          '/zh/guide/': genSidebarConfig(['使用指南', '持续集成', '社区支持']),
         },
       },
     },
   },
 };
 
-function genSidebarConfig(guide) {
+function genSidebarConfig(arr) {
   return [
     {
-      title: guide,
+      title: arr[0],
       collapsable: false,
       children: [
-        '',
+        'reliable-cli',
+        'reliable-web-deploy',
+      ],
+    },
+    {
+      title: arr[1],
+      collapsable: false,
+      children: [
+        'integrate-with-jenkins',
+        'jenkins-web',
+        'jenkins-ios',
+        'jenkins-android',
+        'integrate-with-gitlab-ci',
       ],
     },
   ];
