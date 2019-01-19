@@ -2,3 +2,4 @@ coverage
 view
 app/controller/app.js
 docs_dist
+public/

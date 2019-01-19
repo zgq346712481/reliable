@@ -11,6 +11,7 @@ import {
 } from 'antd';
 
 import ReliableLayout from '../components/ReliableLayout';
+import SiteSetting from '../components/SiteSetting';
 import DingdingSetting from '../components/DingdingSetting';
 
 import pkg from '../../package.json';
@@ -35,6 +36,13 @@ export default class Setting extends React.Component {
           <Row>
             <Col data-accessibilityid="dingtalk-webhooks">
               <DingdingSetting />
+            </Col>
+          </Row>
+        </Card>
+        <Card style={{ marginTop: 10 }} title={<FormattedMessage id='setting.site' />}>
+          <Row>
+            <Col>
+              <SiteSetting />
             </Col>
           </Row>
         </Card>

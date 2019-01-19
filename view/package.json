@@ -1,12 +1,10 @@
 {
   "name": "reliable-view",
-  "version": "",
+  "version": "1.0.1",
   "description": "view layer for Reliable",
   "files": [
-    "dist/*.js",
-    "dist/*.css",
-    "lib/*.js",
-    "index.html"
+    "public/*.js",
+    "public/*.css"
   ],
   "links": {
     "issues": "https://github.com/macacajs/reliable/issues?utf8=%E2%9C%93&q=",
@@ -19,8 +17,9 @@
     "test": "macaca run -d ./test",
     "lint": "eslint --fix . --ext jsx,js && stylelint --fix assets/**/*.less -s less",
     "build": "NODE_ENV=production webpack -p --mode production",
+    "build:local": "DIST_DIR=./public npm run build",
     "build:report": "npm run build --report",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build:local",
     "ci": "npm run lint && npm run build && npm run serve && npm test"
   },
   "precommit": [

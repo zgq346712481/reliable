@@ -18,6 +18,7 @@ export default {
   'setting.submit': '更新设置',
   'setting.versioning': '版本信息',
   'setting.notification.build': '构建',
+  'setting.site': '站点设置',
 
   'builds.buildNumber': '构建号',
   'builds.buildLog': '构建日志',

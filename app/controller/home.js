@@ -9,6 +9,7 @@ class HomeController extends Controller {
     const ctx = this.ctx;
     const user = ctx.session.user;
     const { appid, callbackUrl } = ctx.app.config.authorize.dingtalkAuth;
+    const { data: configRes } = await this.ctx.model.Config.findOne({ raw: true });
     ctx.body = await this.app.render({
       dingtalkAuth: {
         appid,
@@ -19,7 +20,7 @@ class HomeController extends Controller {
       title: 'Reliable Suites for Macaca',
       pageId: 'home',
       SERVER_ADDRESS: this.config.reliableView.serverUrl,
-      assetsUrl: this.config.reliableView.assetsUrl,
+      assetsUrl: configRes.site.assetsUrl || this.config.reliableView.assetsUrl,
       version: this.app.config.pkg.version,
     });
   }

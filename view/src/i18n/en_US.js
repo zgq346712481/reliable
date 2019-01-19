@@ -18,6 +18,7 @@ export default {
   'setting.submit': 'Update',
   'setting.versioning': 'Version Info',
   'setting.notification.build': 'Build',
+  'setting.site': 'Site Config',
 
   'builds.buildNumber': 'Build Number',
   'builds.buildLog': 'Build Log',

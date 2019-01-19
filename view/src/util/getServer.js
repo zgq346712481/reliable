@@ -35,5 +35,9 @@ export const getServer = (url, param) => {
     return `${SERVER_ADDRESS}/api/config`;
   }
 
+  if (url === 'getSite' || url === 'postSite') {
+    return `${SERVER_ADDRESS}/api/config`;
+  }
+
   return `${SERVER_ADDRESS}/api/delegate/message`;
 };

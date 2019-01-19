@@ -1,16 +1,14 @@
 logs/
 npm-debug.log
-yarn-error.log
 node_modules/
 package-lock.json
-yarn.lock
-coverage/
 .nyc_output
 docs_dist/
 .idea/
 .vscode/
 app/public/**/*.js
 app/public/**/*.css
+view/public/
 run/
 .DS_Store
 *.sw*

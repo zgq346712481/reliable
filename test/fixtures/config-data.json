@@ -1,9 +1,11 @@
 {
-  "type": "webhooks",
   "webhooks": [
     {
       "tag": "build",
       "url": "https://localhost"
     }
-  ]
+  ],
+  "site": {
+    "assetsUrl": ""
+  }
 }

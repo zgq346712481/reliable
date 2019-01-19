@@ -7,6 +7,10 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 const pkg = require('./package');
 
+const {
+  DIST_DIR,
+} = process.env;
+
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
 
@@ -27,7 +31,7 @@ module.exports = (env, argv) => {
     },
 
     output: {
-      path: path.join(__dirname, '..', 'app', 'public'),
+      path: DIST_DIR ? path.resolve(DIST_DIR) : path.join(__dirname, '..', 'app', 'public'),
       publicPath: 'public',
       filename: '[name].js',
     },

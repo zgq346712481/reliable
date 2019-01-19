@@ -65,7 +65,6 @@ class DingdingSetting extends React.Component {
 
   postWebhooks = async (webhooks) => {
     const res = await request('postWebhooks', 'POST', {
-      type: 'webhooks',
       webhooks,
     });
     if (res.success) {
