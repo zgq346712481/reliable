@@ -1,7 +1,7 @@
 ---
 
 home: true
-heroImage: https://macacajs.github.io/reliable-logo/svg/logo-2.svg
+heroImage: /logo/reliable.svg
 actionText: Try it Out →
 actionLink: /guide/
 features:
