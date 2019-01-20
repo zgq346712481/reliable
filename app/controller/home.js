@@ -20,7 +20,7 @@ class HomeController extends Controller {
       title: 'Reliable Suites for Macaca',
       pageId: 'home',
       SERVER_ADDRESS: this.config.reliableView.serverUrl,
-      assetsUrl: configRes.site.assetsUrl || this.config.reliableView.assetsUrl,
+      assetsUrl: configRes.site && configRes.site.assetsUrl || this.config.reliableView.assetsUrl,
       version: this.app.config.pkg.version,
     });
   }
