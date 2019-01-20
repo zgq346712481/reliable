@@ -25,7 +25,7 @@ export default class SiderBar extends React.Component {
       >
         <div className="logo">
           <Link to="/">
-            <img alt="logo" src="https://macacajs.github.io/reliable-logo/svg/logo-2.svg" />
+            <img alt="logo" src="https://macacajs.github.io/reliable/logo/reliable.svg" />
             <h1>Reliable</h1>
           </Link>
         </div>
