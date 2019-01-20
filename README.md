@@ -5,8 +5,8 @@
 <p align="center">
   <a href="//macacajs.github.io/reliable">
     <img
-      alt="Macaca"
-      src="https://macacajs.github.io/reliable-logo/svg/logo-2.svg"
+      alt="Macaca Reliable"
+      src="https://macacajs.github.io/reliable/logo/reliable.svg"
       width="200"
     />
   </a>
