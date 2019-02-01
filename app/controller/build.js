@@ -23,7 +23,7 @@ class BuildController extends Controller {
     const page = Number(ctx.query.page) || 1;
     const num = Number(ctx.query.num) || ctx.app.config.modelQueryConfig.pagination.num;
 
-    const { jobName, buildNumber } = ctx.query;
+    const { jobName, buildNumber, gitBranch, } = ctx.query;
 
     let res;
     if (jobName) {
@@ -35,7 +35,9 @@ class BuildController extends Controller {
       } else {
         res = await ctx.service.build.queryByJobName({
           jobName,
-          page, num,
+          gitBranch,
+          page,
+          num,
         });
       }
     } else {

@@ -48,13 +48,17 @@ module.exports = class BuildService extends Service {
     };
   }
 
-  async queryByJobName({ page, num, jobName }) {
+  async queryByJobName({ page, num, jobName, gitBranch }) {
     const ctx = this.ctx;
     const allJobName = await ctx.model.JobName.findAll({
       attributes: [
         'jobName',
       ],
     }).map(i => i.jobName);
+    const param = { jobName };
+    if (gitBranch) {
+      param.gitBranch = gitBranch;
+    }
     const total = await ctx.model.Build.count();
     const result = await ctx.model.Build.findAll({
       limit: num,
@@ -65,15 +69,14 @@ module.exports = class BuildService extends Service {
           'DESC',
         ],
       ],
-      where: {
-        jobName,
-      },
+      where: param,
     });
     return {
       success: true,
       message: '',
       data: {
         allJobName,
+        gitBranch,
         total,
         page,
         result,
