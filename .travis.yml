@@ -18,12 +18,8 @@ install:
 
 script:
   - npm run docs:build
+  - $(npm bin)/macaca-ecosystem push --cwd ./docs_dist --branch gh-pages
   - cd ./docs_dist
-  - git init
-  - git add --all .
-  - git commit -m "Travis CI Auto Builder"
-  - git push --quiet --force https://$REPO_TOKEN@github.com/macacajs/reliable.git master:gh-pages
-  - cd ..
   - MYSQL_PORT=13306 npm run ci
 
 after_script:
