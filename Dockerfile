@@ -21,7 +21,6 @@ RUN yum -y install curl \
       libXScrnSaver* \
       epel-release \
       libappindicator-gtk3 \
-      libnss3.so \
       glibc-common \
       xorg-x11-fonts-Type1 \
       wqy-microhei-fonts \
