@@ -3,16 +3,20 @@
 const debug = require('debug')('reliable:reliable-dingtalk');
 const ChatBot = require('dingtalk-robot-sender');
 
+// response format is axios
+// https://github.com/axios/axios#response-schema
+// https://github.com/x-cold/dingtalk-robot/blob/master/lib/bot.js
 const sendMarkdown = async options => {
   debug(options);
   const robot = new ChatBot({
     webhook: options.webhook.url,
   });
+  let res;
   if (options.isRawMarkdown) {
-    await robot.markdown(options.title, options.text);
-    return;
+    res = await robot.markdown(options.title, options.text);
   }
-  await robot.markdown(options.title, options.text.join('\n\n'));
+  res = await robot.markdown(options.title, options.text.join('\n\n'));
+  return res;
 };
 
 module.exports = {
