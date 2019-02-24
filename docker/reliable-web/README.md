@@ -70,6 +70,7 @@ start server:
 
 ```bash
 npm run dev
+# open app at localhost:7001
 ```
 
 insert seed data:

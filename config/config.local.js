@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = () => {
-  const config = exports = {};
+  const config = (exports = {});
 
   config.reliableView = {
-    // assetsUrl: '//127.0.0.1:8080',
+    assetsUrl: '//127.0.0.1:8080',
   };
   config.authorize = {
     enable: false,
@@ -22,4 +22,3 @@ module.exports = () => {
   };
   return config;
 };
-
