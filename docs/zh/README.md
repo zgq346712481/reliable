@@ -19,4 +19,4 @@ footer: MIT Licensed | Copyright © 2015-present Macaca
 Reliable 适合在持续集成阶段与现有研发流程打通和衔接，当然也可以独立使用。
 :::
 
-![](https://wx3.sinaimg.cn/large/6d308bd9ly1fz3wii2wqsj21bh0u0qij.jpg)
+![](/reliable/assets/6d308bd9ly1fz3wii2wqsj21bh0u0qij.jpg)

@@ -26,13 +26,13 @@ There are two sample projects, one for publish app and the other for publish pri
 Create a new item named `ios-app-bootstrap`, and select the `Freestyle project` mode.
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ft3id6n0ajj21kw12rduv.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3id6n0ajj21kw12rduv.jpg" width="75%" />
 </div>
 
 ### Step2 - SCM Config
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9gy1ft3id6gbmej21kw12r7hb.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3id6gbmej21kw12r7hb.jpg" width="75%" />
 </div>
 
 Please input the `ios-app-bootstrap` git url, and set the clone depth to `1`, branch to `master` is ok.
@@ -44,7 +44,7 @@ https://github.com/app-bootstrap/ios-app-bootstrap.git
 ### Step3 - Build Scripts Config
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9gy1ft3jq4frzjj21kw10nqek.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3jq4frzjj21kw10nqek.jpg" width="75%" />
 </div>
 
 ```
@@ -72,25 +72,25 @@ npm ERR! Exit status 1
 ### Step4 - Build Now
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9gy1ft3jw0q7o0j21kw10ndql.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3jw0q7o0j21kw10ndql.jpg" width="75%" />
 </div>
 
 After the building ready, you can get the final result from reliable-web.
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9gy1ft3jw2iloqj21kw10nguj.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3jw2iloqj21kw10nguj.jpg" width="75%" />
 </div>
 
 We cat get the `debug` package of the `ios-app-bootstrap`.
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ft3jw318grj21kw10nwp4.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3jw318grj21kw10nwp4.jpg" width="75%" />
 </div>
 
 Scan the QRCode, you can download and install it with your device.
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9gy1ft3jw32rz0j21kw10ntma.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3jw32rz0j21kw10ntma.jpg" width="75%" />
 </div>
 
 You can also get other extra build infomation. If you want more, please tweak the [reliable-cli#configuration](//github.com/macacajs/reliable-cli#configuration) file.
@@ -100,9 +100,9 @@ You can also get other extra build infomation. If you want more, please tweak th
 Reliable support the Unit and E2E test reporter, coverage based on Macaca is supported.
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ftc4y26xzaj21kw10g12f.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ftc4y26xzaj21kw10g12f.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ftc4y31cf5j21kw10g7kz.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ftc4y31cf5j21kw10g7kz.jpg" width="75%" />
 </div>

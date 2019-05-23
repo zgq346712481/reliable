@@ -19,4 +19,4 @@ footer: MIT Licensed | Copyright © 2015-present Macaca
 Reliable is suitable for working with existing R&D processes in the continuous integration phase, and can also be used independently.
 :::
 
-![](https://wx3.sinaimg.cn/large/6d308bd9ly1fz3wii2wqsj21bh0u0qij.jpg)
+![](/reliable/assets/6d308bd9ly1fz3wii2wqsj21bh0u0qij.jpg)

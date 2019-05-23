@@ -6,4 +6,4 @@ Reliable 是 Macaca 的持续交付服务套件，提供测试通过率、覆盖
 Reliable 一键部署，拥有自己的测试管理平台。
 :::
 
-![](http://ww2.sinaimg.cn/large/6d308bd9gw1f5scrp1p4rj20rs0gatbj.jpg)
+![](/reliable/assets/6d308bd9gw1f5scrp1p4rj20rs0gatbj.jpg)

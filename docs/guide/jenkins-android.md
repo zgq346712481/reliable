@@ -27,13 +27,13 @@ Just like reliable-web, we recommend to build Android with Docker.
 Create a new item named `android-app-bootstrap`, and select the `Freestyle project` mode.
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9ly1ft2p8qmlazj21kw15ztol.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2p8qmlazj21kw15ztol.jpg" width="75%" />
 </div>
 
 ### Step2 - SCM Config
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9ly1ft2panw2oqj21kw15znaj.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2panw2oqj21kw15znaj.jpg" width="75%" />
 </div>
 
 Please input the `android-app-bootstrap` git url, and set the clone depth to `1`, branch to `master` is ok.
@@ -45,7 +45,7 @@ https://github.com/app-bootstrap/android-app-bootstrap.git
 ### Step3 - Build Scripts Config
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9ly1ft2peam690j21kw15ztl8.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2peam690j21kw15ztl8.jpg" width="75%" />
 </div>
 
 **Noted**
@@ -53,7 +53,7 @@ https://github.com/app-bootstrap/android-app-bootstrap.git
 - please confirm jenkins delete the workspace before build to avoid the old middle-file problem.
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9ly1ft2plz2djxj21kw16pk5j.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2plz2djxj21kw16pk5j.jpg" width="75%" />
 </div>
 
 We provide the Android build docker like `macacajs/macaca-android-build-docker`, so you can set the feild content like this:
@@ -93,25 +93,25 @@ npm ERR! Exit status 1
 ### Step4 - Build Now
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9ly1ft2pvmld7dj21kw148wn3.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2pvmld7dj21kw148wn3.jpg" width="75%" />
 </div>
 
 After the building ready, you can get the final result from reliable-web.
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9ly1ft2pvmlnkij21kw148dph.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2pvmlnkij21kw148dph.jpg" width="75%" />
 </div>
 
 We cat get the `debug` and `relese` package of the `android-app-bootstrap`.
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9ly1ft2pvmmewxj21kw14849j.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2pvmmewxj21kw14849j.jpg" width="75%" />
 </div>
 
 Scan the QRCode, you can download and install it with your device.
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9ly1ft2pvmlz1hj21kw148tl3.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2pvmlz1hj21kw148tl3.jpg" width="75%" />
 </div>
 
 You can also get other extra build infomation. If you want more, please tweak the [reliable-cli#configuration](//github.com/macacajs/reliable-cli#configuration) file.
