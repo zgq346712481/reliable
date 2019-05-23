@@ -27,13 +27,13 @@ $ mkdir $HOME/reliable_home/gradle_cache
 创建一个项目名为 `android-app-bootstrap`，并且选择自由风格模式。
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9ly1ft2p8qmlazj21kw15ztol.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2p8qmlazj21kw15ztol.jpg" width="75%" />
 </div>
 
 ### 第2步 - SCM 配置
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9ly1ft2panw2oqj21kw15znaj.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2panw2oqj21kw15znaj.jpg" width="75%" />
 </div>
 
 输入项目的 git 地址，并且选择克隆深度为 1，分支为 `master`。
@@ -45,7 +45,7 @@ https://github.com/app-bootstrap/android-app-bootstrap.git
 ### 第3步 - 构建脚本配置
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9ly1ft2peam690j21kw15ztl8.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2peam690j21kw15ztl8.jpg" width="75%" />
 </div>
 
 **注意**
@@ -53,7 +53,7 @@ https://github.com/app-bootstrap/android-app-bootstrap.git
 - 请确保勾选构建前删除运行空间，以排除老的中间文件造成的问题。
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9ly1ft2plz2djxj21kw16pk5j.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2plz2djxj21kw16pk5j.jpg" width="75%" />
 </div>
 
 我们提供 Android 构建 Docker 镜像 `macacajs/macaca-android-build-docker`，你可以设置如下：
@@ -93,25 +93,25 @@ npm ERR! Exit status 1
 ### 第4步 - 理解构建
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9ly1ft2pvmld7dj21kw148wn3.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2pvmld7dj21kw148wn3.jpg" width="75%" />
 </div>
 
 构建结束后，你可以在 reliable web 平台获得构建结果。
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9ly1ft2pvmlnkij21kw148dph.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2pvmlnkij21kw148dph.jpg" width="75%" />
 </div>
 
 比如我们能够获得 `android-app-bootstrap` 的 `debug` 类型包和 `release` 类型包。
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9ly1ft2pvmmewxj21kw14849j.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2pvmmewxj21kw14849j.jpg" width="75%" />
 </div>
 
 Reliable 平台也支持扫码下载安装等实用功能。
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9ly1ft2pvmlz1hj21kw148tl3.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9ly1ft2pvmlz1hj21kw148tl3.jpg" width="75%" />
 </div>
 
 我们也可以获得项目配置，版本等额外信息。如果需要更多上报信息可以参考上报脚本文档 [reliable-cli#configuration](//github.com/macacajs/reliable-cli#configuration)。

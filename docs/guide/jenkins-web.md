@@ -19,13 +19,13 @@ Just like reliable-web, we recommend to build web with Docker.
 Create a new item named `web-app-bootstrap`, and select the `Freestyle project` mode.
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ftc27q3vd3j21kw128tpk.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ftc27q3vd3j21kw128tpk.jpg" width="75%" />
 </div>
 
 ### Step2 - SCM Config
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9gy1ftc27pr7xuj21kw128gzp.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ftc27pr7xuj21kw128gzp.jpg" width="75%" />
 </div>
 
 Please input the `web-app-bootstrap` git url, and set the clone depth to `1`, branch to `master` is ok.
@@ -41,7 +41,7 @@ https://github.com/app-bootstrap/web-app-bootstrap.git
 - please confirm jenkins delete the workspace before build to avoid the old middle-file problem.
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9gy1ftc27nq3rsj21kw12j7if.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ftc27nq3rsj21kw12j7if.jpg" width="75%" />
 </div>
 
 We provide the webpack build docker like `macacajs/macaca-electron-docker`, so you can set the feild content like this:
@@ -82,13 +82,13 @@ npm ERR! Exit status 1
 After the building ready, you can get the final result from reliable-web.
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9gy1ft3nqcab4vj21kw0xxwn0.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqcab4vj21kw0xxwn0.jpg" width="75%" />
 </div>
 
 We cat get the build results of the `web-app-bootstrap`.
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9gy1ft3nqcmte5j21kw0xxdm6.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqcmte5j21kw0xxdm6.jpg" width="75%" />
 </div>
 
 You can also get other extra build infomation. If you want more, please tweak the [reliable-cli#configuration](//github.com/macacajs/reliable-cli#configuration) file.
@@ -98,21 +98,21 @@ You can also get other extra build infomation. If you want more, please tweak th
 Reliable support the Unit and E2E test reporter, coverage based on Macaca is supported.
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9gy1ft3nqbd9e3j21kw0xx45p.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqbd9e3j21kw0xx45p.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9gy1ft3nqbgjesj21kw0xx7ee.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqbgjesj21kw0xx7ee.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ft3nqbnft5j21kw0xxaq1.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqbnft5j21kw0xxaq1.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9gy1ft3nqd3c7fj21kw0xxqcj.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqd3c7fj21kw0xxqcj.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ft3nqcraoij21kw0xxjyt.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqcraoij21kw0xxjyt.jpg" width="75%" />
 </div>

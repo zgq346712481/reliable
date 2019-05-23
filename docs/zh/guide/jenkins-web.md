@@ -19,13 +19,13 @@
 Create a new item named `web-app-bootstrap`, and select the `Freestyle project` mode.
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ftc27q3vd3j21kw128tpk.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ftc27q3vd3j21kw128tpk.jpg" width="75%" />
 </div>
 
 ### 第2步 - SCM 配置
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9gy1ftc27pr7xuj21kw128gzp.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ftc27pr7xuj21kw128gzp.jpg" width="75%" />
 </div>
 
 Please input the `web-app-bootstrap` git url, and set the clone depth to `1`, branch to `master` is ok.
@@ -41,7 +41,7 @@ https://github.com/app-bootstrap/web-app-bootstrap.git
 - 请确保勾选构建前删除运行空间，以排除老的中间文件造成的问题。
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9gy1ftc27nq3rsj21kw12j7if.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ftc27nq3rsj21kw12j7if.jpg" width="75%" />
 </div>
 
 我们提供 Web 构建 Docker 镜像 `macacajs/macaca-electron-docker`，你可以设置如下：
@@ -82,13 +82,13 @@ npm ERR! Exit status 1
 构建结束后，你可以在 reliable web 平台获得构建结果。
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9gy1ft3nqcab4vj21kw0xxwn0.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqcab4vj21kw0xxwn0.jpg" width="75%" />
 </div>
 
 We cat get the build results of the `web-app-bootstrap`.
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9gy1ft3nqcmte5j21kw0xxdm6.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqcmte5j21kw0xxdm6.jpg" width="75%" />
 </div>
 
 我们也可以获得项目配置，版本等额外信息。如果需要更多上报信息可以参考上报脚本文档 [reliable-cli#configuration](//github.com/macacajs/reliable-cli#configuration)。
@@ -98,21 +98,21 @@ We cat get the build results of the `web-app-bootstrap`.
 Reliable 无缝集成 Macaca 自动化测试工具，支持通过率报告，端到端链路刻画，覆盖率等质量覆盖方案。
 
 <div align="center">
-  <img src="https://wx4.sinaimg.cn/large/6d308bd9gy1ft3nqbd9e3j21kw0xx45p.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqbd9e3j21kw0xx45p.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx3.sinaimg.cn/large/6d308bd9gy1ft3nqbgjesj21kw0xx7ee.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqbgjesj21kw0xx7ee.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ft3nqbnft5j21kw0xxaq1.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqbnft5j21kw0xxaq1.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx1.sinaimg.cn/large/6d308bd9gy1ft3nqd3c7fj21kw0xxqcj.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqd3c7fj21kw0xxqcj.jpg" width="75%" />
 </div>
 
 <div align="center">
-  <img src="https://wx2.sinaimg.cn/large/6d308bd9gy1ft3nqcraoij21kw0xxjyt.jpg" width="75%" />
+  <img src="/reliable/assets/6d308bd9gy1ft3nqcraoij21kw0xxjyt.jpg" width="75%" />
 </div>

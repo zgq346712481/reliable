@@ -6,4 +6,4 @@ Reliable is Macaca's continuous delivery service suite that provides test pass r
 Reliable supports one-click deployment, quickly has your own test management platform.
 :::
 
-![](http://ww2.sinaimg.cn/large/6d308bd9gw1f5scrp1p4rj20rs0gatbj.jpg)
+![](/reliable/assets/6d308bd9gw1f5scrp1p4rj20rs0gatbj.jpg)
