@@ -1,9 +1,11 @@
-var fs = require('fs');
-var path = require('path');
-var request = require('request');
+'use strict';
 
-var download = function(uri, filename, callback) {
-  request.head(uri, function(err, res, body) {
+const fs = require('fs');
+const path = require('path');
+const request = require('request');
+
+const download = function(uri, filename, callback) {
+  request.head(uri, function(err, res) {
     console.log(uri);
     console.log('content-type:', res.headers['content-type']);
     console.log('content-length:', res.headers['content-length']);
@@ -18,8 +20,7 @@ const prefix = '/reliable';
 
 // List all files in a directory in Node.js recursively in a synchronous fashion
 const walkSync = function(dir, fileList) {
-  var fs = fs || require('fs'),
-    files = fs.readdirSync(dir);
+  const files = fs.readdirSync(dir);
   fileList = fileList || [];
   files.forEach(function(file) {
     if (fs.statSync(dir + file).isDirectory()) {
@@ -36,21 +37,21 @@ if (process.argv.length <= 2) {
   process.exit(-1);
 }
 
-var targetPath = process.argv[2];
+const targetPath = process.argv[2];
 
 const fileList = walkSync(targetPath, []);
 const mdList = fileList.filter(file => file.endsWith('.md'));
 
-function replacer(match, p1, p2, p3, p4, p5, p6, p7, offset, string) {
+function replacer(match, p1, p2, p3, p4, p5, p6, p7) {
   console.log(p1, p2, p3, p4, p5, p6, p7, match);
   download(
     match.startsWith('//') ? 'https:' + match : match,
-    './docs/.vuepress/public/assets/' + [p6, p7].join('.'),
+    './docs/.vuepress/public/assets/' + [ p6, p7 ].join('.'),
     function() {
       console.log(match + ' done');
     }
   );
-  return prefix + '/assets/' + [p6, p7].join('.');
+  return prefix + '/assets/' + [ p6, p7 ].join('.');
 }
 
 mdList.forEach(file => {
@@ -60,11 +61,11 @@ mdList.forEach(file => {
     }
     // console.log(data);
     console.log(file);
-    const matchRes = data.match(
-      /(http(s?):)*\/\/([/.\w\s-])*(sinaimg\.cn\/)(large|square)\/([\w]*)\.(jpg|gif|png)/g
-    );
+    // const matchRes = data.match(
+    //   /(http(s?):)*\/\/([/.\w\s-])*(sinaimg\.cn\/)(large|square)\/([\w]*)\.(jpg|gif|png)/g
+    // );
     // console.log(matchRes);
-    var result = data.replace(
+    const result = data.replace(
       /(http(s?):)*\/\/([/.\w\s-])*(sinaimg\.cn\/)(large|square)\/([\w]*)\.(jpg|gif|png)/g,
       replacer
     );
