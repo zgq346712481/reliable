@@ -13,7 +13,9 @@
 
 ## production
 
-should launch `reliable-mysql` service first.
+Note: launch `reliable-mysql` service and seed data via `npm run db:seed:all` first.
+
+If you don't seed data the server will return 500 error.
 
 [available environment variable](./#environment-variable)
 
@@ -21,8 +23,9 @@ should launch `reliable-mysql` service first.
 $ docker run --rm --name reliable-web \
   -p 9900:9900 \
   -e RELIABLE_HOST=127.0.0.1 \
-  --link reliable-mysql:mysql-host \
-  macacajs/reliable-web
+  -e MYSQL_HOST=reliable-mysql \
+  --link reliable-mysql:reliable-mysql \
+  macacajs/reliable-web:v2
 ```
 
 run as a service
@@ -31,8 +34,9 @@ run as a service
 $ docker run --name reliable-web \
   -p 9900:9900 \
   -e RELIABLE_HOST=127.0.0.1 \
+  -e MYSQL_HOST=reliable-mysql \
   --link reliable-mysql:mysql-host \
-  -d macacajs/reliable-web
+  -d macacajs/reliable-web:v2
 ```
 
 open http://127.0.0.1:9900
