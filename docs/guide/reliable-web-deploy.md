@@ -21,10 +21,10 @@ $ docker-compose -p reliable -f docker-compose.yml down
 Execute `docker ps`, we can see:
 
 ```
-$ docker ps
-CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                   PORTS                               NAMES
-d42a6be2a061        macacajs/reliable-web:test3   "./entrypoint.sh npm…"   3 minutes ago       Up 3 minutes (healthy)   0.0.0.0:9900->9900/tcp              reliable-web
-4d7d43591802        macacajs/reliable-mysql       "docker-entrypoint.s…"   20 minutes ago      Up 20 minutes            0.0.0.0:3306->3306/tcp, 33060/tcp   reliable-mysql
+$  docker ps
+CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS                            PORTS                               NAMES
+7c641bdb57c6        macacajs/reliable-web:v2   "./entrypoint.sh npm…"   6 seconds ago       Up 5 seconds (health: starting)   0.0.0.0:9900->9900/tcp              reliable_web_1
+f589b1c9046f        macacajs/reliable-mysql    "docker-entrypoint.s…"   6 minutes ago       Up 6 seconds                      0.0.0.0:3306->3306/tcp, 33060/tcp   reliable_mysql_1
 ```
 
 During the first deployment, seed the database before accessing the web portal. Otherwise 500 will be thrown:
