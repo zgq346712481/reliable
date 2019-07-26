@@ -23,4 +23,4 @@ script:
   - MYSQL_PORT=13306 npm run ci
 
 after_script:
-  - npm i codecov && codecov
+  - npm i codecov && $(npm bin)/codecov
