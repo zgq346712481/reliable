@@ -4,6 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const traceFragment = require('macaca-ecosystem/lib/trace-fragment');
 
 const pkg = require('./package');
 
@@ -81,6 +82,10 @@ module.exports = (env, argv) => {
       new MiniCssExtractPlugin({
         filename: '[name].css',
         chunkFilename: '[id].css',
+      }),
+      new webpack.DefinePlugin({
+        'process.env.VERSION': JSON.stringify(pkg.version),
+        'process.env.traceFragment': traceFragment,
       }),
     ],
   };
