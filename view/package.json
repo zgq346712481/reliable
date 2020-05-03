@@ -61,6 +61,7 @@
     "react": "^16.6.0",
     "react-code-input": "^3.8.0",
     "react-dom": "^16.6.0",
+    "react-ga": "^2.7.0",
     "react-github-button": "0.1.11",
     "react-intl": "^2.4.0",
     "react-load-script": "^0.0.6",
