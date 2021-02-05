@@ -57,7 +57,7 @@ class BuildController extends Controller {
     const result = await this.ctx.model.Build.findAll({
       limit: 5,
       where: {
-        jobName,
+        jobName: jobName.replace('__', '/'),
         gitBranch,
       },
       order: [
